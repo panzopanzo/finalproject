@@ -1,0 +1,204 @@
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+
+.content:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+body {
+  font: 100%/1.5 Cambria, Garamond, Georgia, Times, serif;
+  color: #333;
+  -moz-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  -webkit-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  background: #fff; }
+
+a {
+  text-decoration: none;
+  color: #4e7c92;
+  -moz-transition: 0.2s color linear;
+  -webkit-transition: 0.2s color linear;
+  transition: 0.2s color linear;
+  -webkit-tap-highlight-color: #4e7c92; }
+
+a:hover {
+  color: #DF3030; }
+
+img {
+  max-width: 100%; }
+
+::-moz-selection {
+  background: #4e7c92;
+  color: #fff;
+  text-shadow: none; }
+
+::selection {
+  background: #4e7c92;
+  color: #fff;
+  text-shadow: none; }
+
+h1 {
+  max-width: 940px;
+  height: 88px;
+  margin: 6px auto 0 auto;
+  font-size: 48px; }
+
+.content-introduction {
+  max-width: 940px;
+  margin: 6px auto 26px auto;
+  padding-top: 20px;
+  border-top: 3px double #dbd1b5; }
+  .content-introduction p {
+    text-transform: uppercase;
+    line-height: 1.1;
+    color: #666; }
+  .content-introduction p:first-child {
+    margin-bottom: 12px;
+    font-size: 26px; }
+  .content-introduction p:last-child {
+    font-size: 14px; }
+
+.nav-collapse {
+  max-width: 940px;
+  margin: 0 auto 20px auto;
+  padding: 10px 0;
+  background: linear-gradient(to bottom, #5d93af 0%, #4e7c92 100%); }
+  .nav-collapse a {
+    display: inline-block;
+    width: 19.5%;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
+
+.content {
+  max-width: 940px;
+  margin: 0 auto;
+  padding-bottom: 1.5em; }
+
+.content-main {
+  float: left;
+  width: 60%;
+  padding-right: 24px; }
+
+.content-sub {
+  float: right;
+  width: 40%; }
+
+.secondary {
+  background: #f8f7f3;
+  border: 1px solid #bfbfbf;
+  padding: 5%; }
+
+iframe {
+  width: 100%; }
+
+.active {
+  background: #4e7c92;
+  color: #fff; }
+
+.nav-collapse, .nav-sub, .panel {
+  border-radius: 10px; }
+
+.nav-sub, .content-sub .panel {
+  margin-top: 16px;
+  padding: 20px;
+  background-color: #f8f7f3;
+  border: 1px solid #bfbfbf; }
+  .nav-sub li, .content-sub .panel li {
+    margin: 6px 0; }
+  .nav-sub ul, .content-sub .panel ul {
+    display: none; }
+  .nav-sub li:first-child ul, .content-sub .panel li:first-child ul {
+    display: block; }
+  .nav-sub > li > a, .content-sub .panel > li > a {
+    font-weight: bold; }
+  .nav-sub ul li, .content-sub .panel ul li {
+    padding-left: 20px; }
+
+footer {
+  margin-top: 40px;
+  background-color: #4e7c92;
+  min-height: 320px; }
+  footer .siteinfo {
+    max-width: 940px;
+    margin: 0 auto;
+    color: #fff;
+    text-shadow: none; }
+    footer .siteinfo a {
+      color: #fff; }
+  footer p, footer ul, footer .vcard {
+    width: 33.333333333333333%;
+    padding: 20px;
+    float: left; }
+
+.secondary .content-sub li {
+  float: left;
+  width: 33.333333333%;
+  padding: 10px; }
+.secondary .content-sub img {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+  height: auto;
+  transition: all 0.2s linear; }
+.secondary .content-sub img:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); }
+
+.content-slider {
+  width: 100%;
+  position: relative; }
+  .content-slider img {
+    height: auto;
+    width: 100%; }
+  .content-slider p.caption {
+    padding: 6px;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+
+@media screen and (max-width: 480px) {
+  .content-main, .content-sub {
+    float: none;
+    width: 100%;
+    margin: 0; }
+
+  .content-main p, .content-main h2 {
+    display: none; }
+
+  .caption {
+    display: block; } }
+@media screen and (max-width: 640px) {
+  .nav-collapse {
+    border-radius: 0; }
+    .nav-collapse a {
+      display: block;
+      width: 100%;
+      text-align: left; } }
+.nav-toggle {
+  position: relative;
+  padding: 20px; }
+
+.nav-toggle:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 4px;
+  background-color: #4e7c92;
+  /* box-shadow:
+  1px 1px 1px red, 1px 1px 1px blue;
+  -research and use multiple shadows to create a hamburger menu
+  */ }
+
+/*# sourceMappingURL=base.css.map */
